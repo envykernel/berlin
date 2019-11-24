@@ -14,7 +14,7 @@ variables:
   dockerRegistryServiceConnection: 'bd02eaf5-8cd5-42fc-872f-12771e7da6b1'
   imageRepository: 'berlin'
   containerRegistry: 'containerregistryberlin.azurecr.io'
-  dockerfilePath: '**/Dockerfile'
+  dockerfilePath: '/Dockerfile'
   tag: '$(Build.BuildId)'
   imagePullSecret: 'containerregistryberlin9236db62-auth'
 
