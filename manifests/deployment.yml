@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: berlin 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: berlin 
+    spec:
+      containers:
+        - name: berlin 
+          image: containerregistryberlin.azurecr.io/berlin
+          ports:
+          - containerPort: 80
